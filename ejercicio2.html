@@ -17,13 +17,15 @@
       <script>
       function mensClase(){
         var conteo= document.getElementsByClassName("mensaje").length;
-        if(conteo == 1){
+        if(conteo <= 2){
           document.getElementById("resultado").innerHTML = "Es muy poco";
         }
         else{
           document.getElementById("resultado").innerHTML = "No esta tan mal";
         }
       };
+
+      mensClase();
       </script>
 
   </body>
