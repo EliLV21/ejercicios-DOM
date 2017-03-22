@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Número de enlaces</title>
+  </head>
+  <body>
+    <h1>¿Cuantos enlaces hay?</h1>
+    <p>Hola, soy un <a href="#" name= "enlace1">enlace</a></p>
+    <p>Los <a name="enlace2">enlaces</a> son muy utiles</p>
+    <p>Pueden llevarnos a otros <a name="enlace3"<sitios</a> web</p>
+    <p>Podemos usar <a name="enlace4">enlaces</a> para crear botones también.</p>
+
+    <p>Muestra aquí cuantos enlaces hay en este sitio:</p>
+    <span id="num_enlaces"></span>
+
+    <script>
+    function enlacesNum (){
+      var longitud= document.getElementsByTagName("a").length;
+      document.getElementById("num_enlaces").innerHTML = longitud;
+    };
+
+    enlacesNum();
+    </script>
+
+  </body>
+</html>
